@@ -73,8 +73,8 @@ nav .about{
 }
 
 nav .header{
-    margin: 10;
-    padding: 10,
+    margin: 10px;
+    padding: 10px;
     
 
 }
@@ -101,7 +101,7 @@ image{
 .main .leftWarrper{
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100px;
     z-index: 100;
     display: flex;
     justify-content: center;
@@ -120,22 +120,45 @@ image{
 
 .aboutMe{
     width: 100%;
-    height: 100vh;
+    height: 100px;
     /* background: #000;s */
 }
 .tab-titles{
     display: flex;
     margin: 20px 0px 40px;
 }
-.tab-link{
+.tab-links{
     margin-left: 80px;
     font-size: 18px;
     font-weight: 500;
     position: relative;
     word-spacing: 80px;
+    padding: 30px;
+}
+.tab-content ul li{
+    list-style: none;
+    margin: 10px o;
+}
+.tab-content ul li span{
+    color: blueviolet;
+    font-size: 14px;
+}
+.tab-content.active-tab{
+    display: block;
+}
+/*-----------services---------*/
+#services{
+    padding: 30px o;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px 1fr));
+    grid: gap 40px;
+    margin-top: 50px;
+}
+
     
 
-}
 
 
 

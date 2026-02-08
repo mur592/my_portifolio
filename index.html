@@ -37,19 +37,68 @@
             <p>my website will come to solve>
 
             <div class="tab-titles">
-               <p class="tab-links">skills</p>
-               <p class="tab-links">experience</p>
-               <p class="tab-links">education</p>
+               <p class="tab-links active-link"onclick="opentab('skills')">skills</p>
+               <p class="tab-links"onclink="opentab('experience')">experience</p>
+               <p class="tab-links"onclink="opentab('education')">education</p>
+            </div>
+            <!---------services--------------->
+            <div id="services">
+               <div class="container">
+                  <h1class="sub-title">My services</h1>
+                  <div class="services-list"> 
+                     <div>
+                        <h2>WEB Design</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem omnis dicta iste vitae assumenda, minus asperiores excepturi rem repellendus dignissimos tenetur error quia? Error mollitia, aspernatur quam fuga alias possimus.</p>
+                     </div>
+                  </div>
+
+               </div>
+
             </div>
       </div>
    </div>
-   <div class="tab-content">
+   <div class="tab-content active-tab" id="skills">
       <ul>
-         <li> <span>UI?UX</span><br>Designing web/  </li>
+         <li> <span>UI?UX</span><br>Designing web/App interfaces </li>
+         <li><span>Web Devolopment</span><br>Web /app Development</li>
+         <li><span>App Development</span><br>building Android/ios app</li>
       </ul>
 
    </div>
+   <div class="tab-content" id="experience">
+      <ul>
+         <li><span>2021- current</span><br>UI/UX Design Training at ET Institute</li>
+         <li><span>2019-2021</span><br>Team lead at starapp LLC.</li>
+         <li><span>2017-2019</span><br>UI/UX Design Executive at coin Digital Ltd.</li>
+         <li><span>2016-2017</span><br>Internship at ekart ecommerce.</li>
+      </ul>
 
+   </div>
+   <div class="tab-content" id="education">
+      <ul>
+         <li><span>2016</span><br>UI/UX Design Training at ET institute</li>
+         <li><span>2016</span><br>MBA from MIT Bangalore.</li>
+         <li><span>2014</span><br>BBA from ISM Bangalore.</li>
+         
+      </ul>
+
+   </div>
+<script>
+   var tablinks=document.getElementsByclassName("tab-links");
+   var tabcontents=document.getElementsByClassName(tab-content);
+   function opentab(tabname){
+      for(tablink of tablinks){
+         tablink.classlist.remove("active-link");
+      }
+      for(tablink of tablinks){
+         tablink.classlist.remove("active-tab");
+      }
+      event.currenttarget.classlist.add("active-link");
+      document.getElementsById(tabname).classlist.add(active-tab);
+      
+      
+   }
+</script>
 </body>
 
 </html>
